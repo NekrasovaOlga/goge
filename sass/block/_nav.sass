@@ -1,0 +1,88 @@
+.header-section
+    background: $gd-color
+    height: 100vh
+    width: 100%
+.header
+    background: #ffffff
+    position: relative
+    &_navigation
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        height: 114px
+        width: 100%
+        &__img
+            width: 159.85px
+            height: 38.27px
+            margin-right: 239px
+    &_nav
+        &__link
+            text-decoration: none
+            +regular
+            font-size: 15px
+            line-height: 18px
+            color: $orange-color
+            margin-right: 56px
+            position: relative
+            padding-bottom: 8px
+            &:nth-child(1)
+                font-weight: bold
+            &:before
+                position: absolute
+                content: ""
+                height: 3px
+                background: $gd-color
+                width: 22px
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                border-radius: 100px
+                display: none
+                transition: all 0.5s
+            &:hover:before
+                display: block
+    &__backet
+        margin-right: 24px
+        position: relative
+        &::after
+            content: '12'
+            position: absolute
+            width: 14px
+            height: 14px
+            background: $gd-color
+            color: #ffffff
+            +regular
+            font-size: 8px
+            top: -15px
+            right: -12px
+            padding: 3px
+            box-sizing: border-box
+            border-radius: 50px
+
+
+    &_buttons
+        display: flex
+        
+
+    
+        &_btn
+            width: 160px
+            height: 56px
+            background: $gd-color
+            display: flex
+            align-items: center
+            justify-content: center
+            box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2)
+            border-radius: 100px
+            outline: none
+            border: none
+            color: #ffffff
+        &_contributor
+            margin-right: 10px
+
+
+
+
+
+    
