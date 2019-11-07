@@ -14,6 +14,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("./fonts/ProximaNova-Bold.eot");
+  src: local("./fonts/Proxima Nova Bold"), local("ProximaNova-Bold"), url("./fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/ProximaNova-Bold.woff") format("woff"), url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -29,8 +37,8 @@
 
 .header-section {
   background: linear-gradient(253.58deg, #FFC000 1.55%, #FF8A00 95.8%);
-  height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .header {
@@ -145,5 +153,81 @@
 
 .header_buttons_contributor {
   margin-right: 10px;
+}
+
+.hero-section {
+  position: relative;
+  background: url("../img/hero_icon.png") no-repeat;
+  background-position: 85% -10px;
+  z-index: 10;
+}
+
+.hero-section .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  max-width: 534px;
+  width: 100%;
+  height: 90vh;
+}
+
+.hero-section .hero__title {
+  font-family: 'Proxima Nova Bold';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 158.34%;
+  color: #FFF7DF;
+  text-shadow: 2px 0 #FFF7DF;
+}
+
+.hero-section .hero__description {
+  font-family: 'Proxima Nova Regular';
+  font-size: 18px;
+  line-height: 33px;
+  color: #FFF7DF;
+  margin: 26px 0 19px 0;
+  max-width: 446px;
+  width: 100%;
+}
+
+.hero-section .hero__button {
+  width: 160px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background: #FFF7DF;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FF8A00;
+}
+
+.hero-section .hero__arrows {
+  margin: 52px 0 103px 0;
+}
+
+.hero-section .hero__arrows_white {
+  background: #FFF7DF;
+  width: 31px;
+  height: 31px;
+  border-radius: 100%;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
