@@ -1,7 +1,5 @@
 .hero-section
     position: relative
-    background: url('../img/hero_icon.png')no-repeat
-    background-position: 85% -10px
     z-index: 10
     .hero
         display: flex
@@ -10,19 +8,28 @@
         position: relative
         max-width: 534px
         width: 100%
-        height: 90vh
+        margin-top: 129px
+        &_flex
+            display: flex
+        &_background
+            z-index: 5
+            position: absolute
+            width: 436px
+            height: 382px
+            right: 10%
+            top: -10px
         &__title
             +bold
             font-weight: 700
             font-size: 50px
             line-height: 158.34%
             color: #FFF7DF
-            text-shadow: 2px 0 #FFF7DF
+            text-shadow: 2px 0 $beg-color
         &__description
             +regular
             font-size: 18px
             line-height: 33px
-            color: #FFF7DF
+            color: $beg-color
             margin: 26px 0 19px 0
             max-width: 446px
             width: 100%
@@ -33,7 +40,7 @@
             align-items: center
             justify-content: center
             border: none
-            background: #FFF7DF
+            background: $beg-color
             border-radius: 100px
             font-weight: bold
             font-size: 14px
@@ -41,10 +48,45 @@
             color: $orange-color
         &__arrows
             margin: 52px 0 103px 0
+            display: flex
+            align-items: center
             &_white
-                background: #FFF7DF
+                background: $beg-color
                 width: 31px
                 height: 31px
                 border-radius: 100%
                 position: absolute
+                &:hover
+                    background: $gd-color
+                    padding: 20px
+            &_right
+                left: 46px
+                &::before
+                    content: ''
+                    width: 0
+                    height: 0
+                    border-top: 5px solid transparent
+                    border-left: 8px solid $orange-color
+                    border-bottom: 5px solid transparent
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &:hover::before
+                    border-left: 8px solid #ffffff
+            &_left
+                &::before
+                    content: ''
+                    width: 0
+                    height: 0
+                    border-top: 5px solid transparent
+                    border-right: 8px solid $orange-color
+                    border-bottom: 5px solid transparent
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                &:hover::before
+                    border-right: 8px solid #ffffff
+
                 
