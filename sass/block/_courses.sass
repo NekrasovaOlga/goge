@@ -1,0 +1,102 @@
+.courses-section
+    padding-top: 144px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: 62px
+.courses
+    width: 100%
+    &_title
+        +regular
+        color: $orange-color
+        text-align: center
+        margin-bottom: 38px
+        text-shadow: 2px 0 0 $orange-color
+        font-size: 40px
+        line-height: 158.34%
+    &_nav
+        display: flex
+        max-width: 702px
+        width: 100%
+        justify-content: space-between
+        margin: 0 auto
+        margin-bottom: 55px
+        &_item
+            text-decoration: none
+            font-size: 14px
+            line-height: 25px
+            +regular
+            font-weight: normal
+            color: $gray-color
+            position: relative
+            &:before
+                position: absolute
+                content: ""
+                height: 3px
+                background: $gd-color
+                width: 12px
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                border-radius: 100px
+                display: none
+                transition: all 0.5s
+            &:hover:before
+                display: block
+    &_btn
+        margin: 41px auto
+    &_contain
+        margin-top: 55px
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        max-width: 1240px
+        justify-content: space-between
+        margin: 0 auto
+        &_item
+            position: relative
+            width: 303px
+            height: 279px
+            border-radius: 10px
+            display: block
+            background: #C4C4C4
+            overflow: hidden
+            margin-bottom: 15px
+            &_label
+                width: 80px
+                height: 43px 
+                position: absolute
+                right: -10px
+                top: -10px
+                background: $gd-color
+                color: #ffffff
+                font-size: 14px
+                line-height: 152.34%
+                padding: 15px 25px
+                border-radius: 10px
+                +regular
+            &_premium
+                width: 98px
+                height: 43px 
+                position: absolute
+                right: -10px
+                top: -10px
+                background: $gd-color
+                color: #ffffff
+                font-size: 14px
+                line-height: 152.34%
+                padding: 15px 20px
+                border-radius: 10px
+                +regular
+            &_block
+                height: 73px
+                width: 303px
+                background: $gd-color
+                bottom: 0
+                position: absolute
+                padding: 13px 30px
+                font-size: 14px
+                line-height: 152.34%
+                color: #ffffff
+                +regular
+                
