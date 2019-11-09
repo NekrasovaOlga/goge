@@ -1,0 +1,70 @@
+.reviews-section
+    width: 100%
+    padding-top: 96px
+.reviews
+    &_title
+        text-align: center
+        font-weight: bold
+        color: $orange-color
+        text-shadow: 2px 0 0 $orange-color
+        font-size: 40px
+        margin-bottom: 38px
+    &_description
+        max-width: 585px
+        width: 100%
+        margin: 0 auto
+        font-size: 14px
+        line-height: 175.78%
+        color: $gray-color
+        text-align: center
+        margin-bottom: 66px
+    &_item
+        display: flex
+        padding-bottom: 97px
+        overflow: hidden
+        &_list
+            width: 373px
+            height: 343px
+            padding: 40px
+            border-radius: 5px
+            color: $gray-color
+            opacity: 0.5
+            
+            &:hover
+                box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2)
+                opacity: 1
+
+            &_text
+                position: relative
+                font-size: 14px
+                line-height: 175.78%
+                margin-top: 50px    
+                width: 284px  
+                &:after
+                    position: absolute
+                    content: "“"
+                    top: -20px
+                    font-size: 100px
+                    font-weight: bold
+                    left: -5px
+            &_block
+                display: flex
+                align-items: center
+                margin-top: 48px
+            &_img
+                position: relative
+                width: 59px
+                height: 57px
+                border-radius: 50%
+                background: #D8D8D8
+                margin-right: 11px
+            &_title
+                font-size: 16px
+                line-height: 105.47%
+                font-weight: bold
+            &_description
+                font-size: 12px
+                line-height: 105.47%
+                font-weight: normal
+                margin-top: 4px
+                
