@@ -807,6 +807,9 @@ body {
   display: flex;
   padding-bottom: 97px;
   overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews_item_list {
@@ -994,5 +997,317 @@ body {
           justify-content: center;
   font-size: 10px;
   text-shadow: 1px 0 0 #FF8A00;
+}
+
+.subscription-section {
+  position: relative;
+  padding-top: 100px;
+  width: 100%;
+  background: url("../img/subscrib_body.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.subscription {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscription_text {
+  width: 301px;
+  margin-right: 52px;
+}
+
+.subscription_text_title {
+  font-size: 24px;
+  color: #FF8A00;
+  text-shadow: 1px 0 0 #FF8A00;
+  margin-bottom: 20px;
+}
+
+.subscription_text_description {
+  font-size: 14px;
+  color: #5C5C5C;
+}
+
+.subscription_input {
+  width: 523px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 14px;
+}
+
+.subscription_input input {
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  -webkit-box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+          box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 100px;
+  width: 523px;
+  position: relative;
+  padding: 19px 31px;
+  outline: none;
+}
+
+.subscription_input input:placeholder {
+  color: red;
+}
+
+.subscription_input button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.appeals {
+  width: 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.appeal {
+  position: relative;
+  margin-top: 190px;
+  width: 446px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.appeal_title {
+  width: 320px;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FF8A00;
+  text-shadow: 1px 0 0 #FF8A00;
+}
+
+.appeal_description {
+  margin: 40px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #5C5C5C;
+}
+
+.appeal_btn {
+  margin-bottom: 56px;
+}
+
+.appeal_img {
+  position: absolute;
+  width: 925px;
+  height: 644px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.appeal_img:before {
+  position: absolute;
+  content: "";
+  background: url("../img/element.png") no-repeat;
+  width: 1028px;
+  height: 796px;
+  bottom: -150px;
+  z-index: -5;
+}
+
+.appeal_img:after {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  background: url("../img/subscrib_placeh.png") no-repeat;
+  width: 925px;
+  height: 650px;
+  left: 0;
+  top: -5px;
+}
+
+.footer-section {
+  position: relative;
+  width: 100%;
+  background: #212121;
+  color: #ffffff;
+  padding: 46px 0;
+  font-size: 14px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_logo img {
+  width: 142px;
+  height: 34px;
+}
+
+.footer_logo_text {
+  width: 265px;
+  margin: 32px 0;
+}
+
+.footer_logo_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 114px;
+  height: 21px;
+}
+
+.footer_logo_social i {
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+}
+
+.footer_logo_social-f {
+  background: #272EAE;
+}
+
+.footer_logo_social-twitter {
+  background: #1590D8;
+}
+
+.footer_logo_social-youtube {
+  background: #D0021B;
+}
+
+.footer_logo_social-dribbble {
+  background: #F53E6A;
+}
+
+.footer_quicklinks_text {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.footer_quicklinks nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer_quicklinks_link {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer_quicklinks_link:hover {
+  text-decoration: underline;
+}
+
+.footer_contact_text {
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.footer_contact p {
+  margin-bottom: 12px;
+}
+
+.footer_faq {
+  width: 203px;
+  padding-top: 115px;
+}
+
+.footer_faq_link {
+  text-decoration: none;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.privacy-section {
+  background: #000000;
+  width: 100%;
+}
+
+.privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  height: 39px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+}
+
+.privacy_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 354px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.privacy_text a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+.privacy_text a span {
+  color: #FF8A00;
 }
 /*# sourceMappingURL=style.css.map */
