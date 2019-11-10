@@ -23,6 +23,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?71693482");
+  src: url("../font/fontello.eot?71693482#iefix") format("embedded-opentype"), url("../font/fontello.woff2?71693482") format("woff2"), url("../font/fontello.woff?71693482") format("woff"), url("../font/fontello.ttf?71693482") format("truetype"), url("../font/fontello.svg?71693482#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -575,7 +583,7 @@ body {
 }
 
 .courses-section {
-  padding-top: 108px;
+  padding-top: 144px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -863,5 +871,128 @@ body {
   line-height: 105.47%;
   font-weight: normal;
   margin-top: 4px;
+}
+
+.price-section {
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 100px;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price_block_title {
+  font-size: 40px;
+  color: #FF8A00;
+  text-shadow: 2px 0 0 #FF8A00;
+}
+
+.price_block_description {
+  width: 359px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #5C5C5C;
+}
+
+.price_block_button {
+  margin-top: 30px;
+}
+
+.price_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 572px;
+}
+
+.price_links_item {
+  width: 273px;
+  height: 504px;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  padding: 44px 37px;
+  background: url("../img/prices.png") no-repeat bottom right;
+  color: #5C5C5C;
+}
+
+.price_links_item_premium {
+  font-size: 24px;
+  margin-bottom: 27px;
+}
+
+.price_links_item_title {
+  font-size: 101px;
+  color: #FF8A00;
+  position: relative;
+  text-shadow: 2px 0 0 #FF8A00;
+  margin-left: 5px;
+  height: 102px;
+}
+
+.price_links_item_title:after {
+  position: absolute;
+  content: '$';
+  font-size: 24px;
+  color: #5C5C5C;
+  top: 0;
+  left: -5px;
+  text-shadow: none;
+}
+
+.price_links_item_title span {
+  font-size: 17px;
+  color: #5C5C5C;
+  text-shadow: none;
+}
+
+.price_links_item_description {
+  font-size: 10px;
+  margin: 20px 0;
+  line-height: 18px;
+}
+
+.price_links_item_advantages_item {
+  font-size: 10px;
+  margin-bottom: 14px;
+  list-style: none;
+  position: relative;
+  margin-left: 21px;
+}
+
+.price_links_item_advantages_item:after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: '\2713';
+  font-weight: bold;
+  font-family: arial;
+  color: #FF8A00;
+  border: 2px solid #FF8A00;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  margin-left: -21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10px;
+  text-shadow: 1px 0 0 #FF8A00;
 }
 /*# sourceMappingURL=style.css.map */

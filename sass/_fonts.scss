@@ -40,3 +40,17 @@
 @mixin bold {
     font-family: 'Proxima Nova Bold';
 	}
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?71693482');
+  src: url('../font/fontello.eot?71693482#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?71693482') format('woff2'),
+       url('../font/fontello.woff?71693482') format('woff'),
+       url('../font/fontello.ttf?71693482') format('truetype'),
+       url('../font/fontello.svg?71693482#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin fontel {
+    font-family: 'fontello';
+	}
