@@ -1,0 +1,62 @@
+.search-section
+    margin-top: 98px
+.search
+    height: 98px
+    width: 90%
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $gd-color
+    border-radius: 10px
+    margin-bottom: 60px
+    padding: 25px 46px
+    position: relative
+    label
+        width: 100%
+        position: relative
+        span
+            position: absolute
+            left: 0
+            i
+                color: #ffffff
+    &_input
+        background: transparent
+        border-bottom: 3px solid #ffffff
+        border-radius: 2px
+        outline: none
+        width: 100%
+        border-left: none
+        border-top: none
+        border-right: none
+        font-size: 14px
+        line-height: 17px
+        padding: 4px 44px
+        &::placeholder
+            color: #ffffff
+        
+.courses
+    &_block
+        &_filter
+            margin-bottom: 39px
+            max-width: 919px;
+            width: 100%
+            display: flex
+            justify-content: space-between
+            &_checkbox
+                width: 57px
+                height: 21px
+                display: none
+                position: relative
+.filter
+    &_checkbox
+        width: 57px
+        height: 21px
+        position: relative
+        display: flex
+        justify-content: space-around
+        align-items: center
+        i
+            color: #bebebe
+input[type="radio"]:checked + i
+    color: #000000

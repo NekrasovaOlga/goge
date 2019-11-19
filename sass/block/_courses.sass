@@ -4,6 +4,8 @@
     flex-direction: column
     align-items: center
     padding-bottom: 62px
+.courses_block_item
+    max-width: 928px;
 .courses
     width: 100%
     &_title
@@ -46,13 +48,15 @@
     &_btn
         margin: 41px auto
     &_contain
-        margin-top: 55px
+        
         display: flex
         flex-wrap: wrap
         width: 100%
-        max-width: 1240px
         justify-content: space-between
-        margin: 0 auto
+        &_block
+            max-width: 1240px
+            margin: 0 auto
+            margin-top: 55px
         &_item
             position: relative
             width: 303px
